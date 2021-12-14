@@ -1,0 +1,125 @@
+﻿<html>
+
+<style>
+  body {
+    color: white;
+  }
+
+  input {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+  }
+
+  button {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  button:hover {
+    box-shadow: 0 5px 50px 0 white;
+    color: white;
+    border-radius: 10px;
+  }
+</style>
+
+<head>
+  <meta charset="utf-8">
+  <title>Exploit For PS4 Console - 9.00 Firmwares</title>
+  <link rel="stylesheet prefetch" href="Style.css">
+
+  <script>
+    function showdate() {
+      var dt = new Date();
+      Hour = dt.getHours();
+      Minute = dt.getMinutes();
+      Day = dt.getDate();
+      Month = dt.getMonth() + 1;
+      Year = dt.getFullYear();
+      if (Minute < 10) {
+        Minute = "0" + Minute;
+      };
+      if (Hour < 10) {
+        Hour = "0" + Hour;
+      };
+      document.getElementById("date").innerHTML = (Day + "/" + Month + "/" + Year);
+      document.getElementById("clock").innerHTML = (Hour + ":" + Minute);
+    }
+
+    setInterval(showdate, 0);
+  </script>
+</head>
+
+<body class="bg-darker">
+  <div id="container">
+    <div id=ScrOverlay class=cacheUPDbg>
+      <pre id=cacheUPDtxt class=cacheUPD></pre>
+      <div id=CacheProgress>
+        <div id=CacheBar></div>
+      </div>
+    </div>
+    <hr><span id="date"></span><span id="clock"></span>
+    <h1 style='font-size:25px;text-align:center;color:white;'>Exploit For PS4 Console - 9.00 Firwares&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+    <hr>
+    <div id="myModal" class="modal">
+      <!-- MODAL CONTENTS -->
+      <div class="modal-content">
+        <span class="close"></span>
+        <div class="modal-body">
+
+          <br><br><br>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var modal = document.getElementById("myModal");
+      var span = document.getElementsByClassName("close")[0];
+      btn.onclick = function () {
+        modal.style.display = "block";
+      }
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+    <div style="text-align:center" id="MyItems">
+      <br>
+      <h1 id=NightKing style='font-size:30px;text-align:center;text-shadow: 4px 4px 4px black;color:yellow'>PS4 MAIN MENU</h1>
+      <br>
+	  <div style=font-size:25px;text-align:center;color:yellow;>9.00 FW  Auto Exploit + Gold Hen v2.0b / 9.00 FW Host Menu</div>
+	  <a href="900jb/index.html"><button style='font-size:20px;text-align:center;color:#4863A0;width: 480px;' class="pointer"
+          onMouseOver="NightKing.innerHTML='9.00 FW  Auto Exploit + Gold Hen 2.0b'" ;
+          onmouseout="NightKing.innerHTML='PS4 MAIN MENU'" type="button"><B> 9.00 FW Auto Kernel Exploit + Gold Hen v2.0b </B></button></a>
+	  <a href="900/index.html"><button style='font-size:20px;text-align:center;color:#4863A0;width: 320px;' class="pointer"
+          onMouseOver="NightKing.innerHTML='9.00 FW  Host Menu Offline [ Need Flash Drive ]'" ;
+          onmouseout="NightKing.innerHTML='PS4 MAIN MENU'" type="button"><B> 9.00 FW Exploit Menu </B></button></a>
+      <br><br>
+    </div>
+    <script>
+      var GBl = document.getElementById("Backl");
+      var l5x = document.getElementById("75xl");
+      var l5xJ = document.getElementById("75xlJ");
+
+      l5x.onclick = function () {
+        l5x.style.display = "none";
+        l5xJ.style.display = "unset";
+        GBl.style.display = "unset";
+        document.getElementById("75xlT").textContent = "Choose a Exploit (used the last existing one is recommended)";
+      }
+      GBl.onclick = function () {
+        l5x.style.display = "unset"
+        l5xJ.style.display = "none";
+        GBl.style.display = "none";
+        document.getElementById("75xlT").textContent = "7.5X FW Lite Host Exploit Menu";
+      }
+    </script>
+</body>
+
+</html>
